@@ -1,0 +1,22 @@
+BEGIN {
+ a[0]="1";
+ a[1]="2";
+ a[2]="3";
+ a[3]="4";
+}
+{
+   for ( i in a )
+   print "index",i,"contains",a[i];
+   
+   a["one"]="one_value";
+   a["two"]="second_value";
+   delete a[0];
+
+   for ( i in a )
+   print "index",i,"contains",a[i];
+}
+END {
+print "-----"
+}
+ 
+ 

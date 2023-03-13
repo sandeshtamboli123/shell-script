@@ -1,0 +1,10 @@
+!#/bin/bash
+
+echo "read the value of fruit"
+read fruit
+
+case "$fruit" in
+         apple) echo "apple is very tasty";;
+         grapes) echo "grapes are famous in nashik";;
+         kiwi) echo "kiwi famous in new-zealand";;
+esac

@@ -1,0 +1,22 @@
+!#/bin/bash
+
+echo "select the value of var1"
+read var1
+
+if [ $var1 -eq 10 ]
+then
+ echo "The condition is satisfied"
+else
+ echo "The condition is not satisfied"
+fi
+
+echo "select the value of var2"
+read var2
+
+if [ $var2 -gt 20 ]
+then
+ echo "second condition is also true"
+else 
+ echo "second condition is false"
+exit
+fi
